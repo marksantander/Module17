@@ -1,10 +1,12 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+Regular expressions (regex or regexp) are a sequence of characters that define a search pattern. They can be used to search, edit, or manipulate text. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will explain how to use regex to validate email addresses.
+
+^[a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$
 
 ## Table of Contents
 
@@ -23,6 +25,12 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+
+Anchors match the beginning of the string, or the beginning or end of a word.  he following anchors are used in the email address regex pattern:
+
+- ^: Matches the beginning of the string.
+- <span class="math-inline">\: Matches the end of the string. ### **Character Classes** Character classes are special characters that match a set of      characters. The following character classes are used in the email address regex pattern: * `[a-zA-Z0-9.!#%&'*+-/=?^_{|}~-]+: Matches any alphanumeric character, period, exclamation point, hash symbol, dollar sign, percent sign, ampersand, apostrophe, asterisk, plus sign, hyphen, slash, question mark, equal sign, caret symbol, underscore, backtick, curly brace, pipe symbol, tilde, or hyphen.
+- [a-zA-Z0-9-]+: Matches any alphanumeric character or hyphen.
 
 ### Quantifiers
 

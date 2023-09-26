@@ -68,6 +68,6 @@ Quantifiers are characters that specify how many times a character or character 
 
 Email Checker was created and maintained by Aman Nurani. It provides a powerful email validating system for both development and production for Laravel. It uses fsockopen(), cURL and many more to validate email address exists or not in real world.
 
-https://github.com/aman00323/email-checker
+^https://github.com/aman00323/email-checker
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)

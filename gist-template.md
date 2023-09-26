@@ -1,6 +1,6 @@
-# Title (replace with your title)
+# Email Checker
 
-Regular expressions (regex or regexp) are a sequence of characters that define a search pattern. They can be used to search, edit, or manipulate text. 
+Email Checker was created and maintained by Aman Nurani. It provides a powerful email validating system for both development and production for Laravel. It uses fsockopen(), cURL and many more to validate email address exists or not in real world.
 
 ## Summary
 
@@ -23,6 +23,9 @@ This tutorial will explain how to use regex to validate email addresses.
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+To get the latest version, simply require the project using Composer:
+^$ composer require aman00323/emailchecker
+Once installed, You need to include Aman\EmailVerifier\EmailChecker to access methods for email verify.
 
 ### Anchors
 
@@ -34,9 +37,18 @@ Anchors match the beginning of the string, or the beginning or end of a word.  h
 
 ### Quantifiers
 
+Quantifiers are characters that specify how many times a character or character class must match. The following quantifiers are used in the email address regex pattern:
+
++: Matches one or more occurrences of the preceding character or character class.
+*: Matches zero or more occurrences of the preceding character or character class.
+
 ### OR Operator
 
 ### Character Classes
+
+^app(EmailChecker::class)->checkDisposableEmail('something@example.com','boolean'));
+^app(EmailChecker::class)->setFromEmail('something@example.com','boolean'));
+^EMAIL_CHECKER_SET_FROM='something@example.com'
 
 ### Flags
 
@@ -53,5 +65,9 @@ Anchors match the beginning of the string, or the beginning or end of a word.  h
 ### Look-ahead and Look-behind
 
 ## Author
+
+Email Checker was created and maintained by Aman Nurani. It provides a powerful email validating system for both development and production for Laravel. It uses fsockopen(), cURL and many more to validate email address exists or not in real world.
+
+https://github.com/aman00323/email-checker
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
